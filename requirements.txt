@@ -1,0 +1,6 @@
+# Tested with Python 3.13, ortools 9.15, numpy 2.5, scipy 1.18, matplotlib 3.11, pytest 9.
+ortools>=9.10
+numpy>=1.26
+scipy>=1.11
+matplotlib>=3.8
+pytest>=8

@@ -1,0 +1,1104 @@
+{
+ "records": [
+  {
+   "size": "small",
+   "seed": 0,
+   "config": {
+    "n_sats": 4,
+    "n_targets": 120,
+    "horizon_h": 6.0,
+    "seed": 0,
+    "altitude_km": 550.0,
+    "inclination_deg": 97.6,
+    "max_off_nadir_deg": 55.0,
+    "min_elevation_deg": 10.0,
+    "station_min_elevation_deg": 5.0,
+    "time_step_s": 10,
+    "settle_s": 10.0,
+    "slew_rate_deg_s": 2.0,
+    "duty_budget_s": 300,
+    "memory_budget_s": 600
+   },
+   "time_limit_s": 20.0,
+   "stats": {
+    "satellites": 4,
+    "targets": 120,
+    "targets_with_opportunity": 114,
+    "horizon_h": 6.0,
+    "opportunities": 168,
+    "conflict_pairs": 876,
+    "pairs_both_orders": 356,
+    "pairs_mutually_exclusive": 106,
+    "budget_constraints": 19,
+    "total_weight": 326,
+    "reachable_weight": 316,
+    "instance_build_s": 0.12168610002845526
+   },
+   "results": [
+    {
+     "method": "greedy",
+     "objective": 193,
+     "bound": null,
+     "time_s": 0.007779000094160438,
+     "status": "heuristic",
+     "n_tasks": 54
+    },
+    {
+     "method": "cpsat+hint",
+     "objective": 219,
+     "bound": 219.0,
+     "time_s": 0.6676251998869702,
+     "status": "OPTIMAL",
+     "build_s": 0.014189799898304045,
+     "trace": [
+      [
+       0.044685800000000005,
+       193.0
+      ],
+      [
+       0.0507391,
+       194.0
+      ],
+      [
+       0.0748877,
+       195.0
+      ],
+      [
+       0.0783793,
+       196.0
+      ],
+      [
+       0.11317970000000001,
+       197.0
+      ],
+      [
+       0.1320388,
+       206.0
+      ],
+      [
+       0.24890620000000002,
+       207.0
+      ],
+      [
+       0.292955,
+       218.0
+      ],
+      [
+       0.5121589000000001,
+       219.0
+      ]
+     ],
+     "n_tasks": 57
+    },
+    {
+     "method": "milp-highs",
+     "objective": 219,
+     "bound": 219.0,
+     "time_s": 8.847201600088738,
+     "status": "OPTIMAL",
+     "build_s": 0.0026018000207841396,
+     "n_tasks": 54
+    },
+    {
+     "method": "rolling-cpsat-60min",
+     "objective": 218,
+     "bound": null,
+     "time_s": 0.34455689997412264,
+     "status": "heuristic",
+     "n_tasks": 55
+    }
+   ]
+  },
+  {
+   "size": "small",
+   "seed": 1,
+   "config": {
+    "n_sats": 4,
+    "n_targets": 120,
+    "horizon_h": 6.0,
+    "seed": 1,
+    "altitude_km": 550.0,
+    "inclination_deg": 97.6,
+    "max_off_nadir_deg": 55.0,
+    "min_elevation_deg": 10.0,
+    "station_min_elevation_deg": 5.0,
+    "time_step_s": 10,
+    "settle_s": 10.0,
+    "slew_rate_deg_s": 2.0,
+    "duty_budget_s": 300,
+    "memory_budget_s": 600
+   },
+   "time_limit_s": 20.0,
+   "stats": {
+    "satellites": 4,
+    "targets": 120,
+    "targets_with_opportunity": 116,
+    "horizon_h": 6.0,
+    "opportunities": 170,
+    "conflict_pairs": 953,
+    "pairs_both_orders": 359,
+    "pairs_mutually_exclusive": 115,
+    "budget_constraints": 21,
+    "total_weight": 298,
+    "reachable_weight": 293,
+    "instance_build_s": 0.4687667000107467
+   },
+   "results": [
+    {
+     "method": "greedy",
+     "objective": 161,
+     "bound": null,
+     "time_s": 0.026282900013029575,
+     "status": "heuristic",
+     "n_tasks": 45
+    },
+    {
+     "method": "cpsat+hint",
+     "objective": 179,
+     "bound": 179.0,
+     "time_s": 1.808571600005962,
+     "status": "OPTIMAL",
+     "build_s": 0.07503329997416586,
+     "trace": [
+      [
+       0.16972040000000002,
+       140.0
+      ],
+      [
+       0.1719198,
+       161.0
+      ],
+      [
+       0.1791942,
+       163.0
+      ],
+      [
+       0.2706246,
+       165.0
+      ],
+      [
+       0.28204,
+       168.0
+      ],
+      [
+       0.2985105,
+       172.0
+      ],
+      [
+       0.5016871,
+       173.0
+      ],
+      [
+       0.5561454,
+       174.0
+      ],
+      [
+       0.5753086000000001,
+       175.0
+      ],
+      [
+       0.593769,
+       177.0
+      ],
+      [
+       1.005665,
+       178.0
+      ],
+      [
+       1.1196188,
+       179.0
+      ]
+     ],
+     "n_tasks": 48
+    },
+    {
+     "method": "milp-highs",
+     "objective": 179,
+     "bound": 179.00000000000253,
+     "time_s": 17.347985800006427,
+     "status": "OPTIMAL",
+     "build_s": 0.007968800025992095,
+     "n_tasks": 47
+    },
+    {
+     "method": "rolling-cpsat-60min",
+     "objective": 178,
+     "bound": null,
+     "time_s": 0.14852970000356436,
+     "status": "heuristic",
+     "n_tasks": 48
+    }
+   ]
+  },
+  {
+   "size": "small",
+   "seed": 2,
+   "config": {
+    "n_sats": 4,
+    "n_targets": 120,
+    "horizon_h": 6.0,
+    "seed": 2,
+    "altitude_km": 550.0,
+    "inclination_deg": 97.6,
+    "max_off_nadir_deg": 55.0,
+    "min_elevation_deg": 10.0,
+    "station_min_elevation_deg": 5.0,
+    "time_step_s": 10,
+    "settle_s": 10.0,
+    "slew_rate_deg_s": 2.0,
+    "duty_budget_s": 300,
+    "memory_budget_s": 600
+   },
+   "time_limit_s": 20.0,
+   "stats": {
+    "satellites": 4,
+    "targets": 120,
+    "targets_with_opportunity": 114,
+    "horizon_h": 6.0,
+    "opportunities": 171,
+    "conflict_pairs": 1015,
+    "pairs_both_orders": 322,
+    "pairs_mutually_exclusive": 154,
+    "budget_constraints": 20,
+    "total_weight": 320,
+    "reachable_weight": 300,
+    "instance_build_s": 0.11938619997818023
+   },
+   "results": [
+    {
+     "method": "greedy",
+     "objective": 175,
+     "bound": null,
+     "time_s": 0.007447900017723441,
+     "status": "heuristic",
+     "n_tasks": 49
+    },
+    {
+     "method": "cpsat+hint",
+     "objective": 198,
+     "bound": 198.0,
+     "time_s": 0.5753608000231907,
+     "status": "OPTIMAL",
+     "build_s": 0.013597200042568147,
+     "trace": [
+      [
+       0.038889200000000006,
+       144.0
+      ],
+      [
+       0.039937,
+       175.0
+      ],
+      [
+       0.0471813,
+       177.0
+      ],
+      [
+       0.0645772,
+       178.0
+      ],
+      [
+       0.08357790000000001,
+       187.0
+      ],
+      [
+       0.1140411,
+       189.0
+      ],
+      [
+       0.1208515,
+       190.0
+      ],
+      [
+       0.138189,
+       191.0
+      ],
+      [
+       0.1672393,
+       192.0
+      ],
+      [
+       0.17551740000000002,
+       193.0
+      ],
+      [
+       0.2874973,
+       194.0
+      ],
+      [
+       0.33676480000000003,
+       196.0
+      ],
+      [
+       0.4758409,
+       198.0
+      ]
+     ],
+     "n_tasks": 53
+    },
+    {
+     "method": "milp-highs",
+     "objective": 198,
+     "bound": 198.0000000000001,
+     "time_s": 9.683900100062601,
+     "status": "OPTIMAL",
+     "build_s": 0.002594000077806413,
+     "n_tasks": 51
+    },
+    {
+     "method": "rolling-cpsat-60min",
+     "objective": 194,
+     "bound": null,
+     "time_s": 0.23075370001606643,
+     "status": "heuristic",
+     "n_tasks": 51
+    }
+   ]
+  },
+  {
+   "size": "medium",
+   "seed": 0,
+   "config": {
+    "n_sats": 8,
+    "n_targets": 250,
+    "horizon_h": 12.0,
+    "seed": 0,
+    "altitude_km": 550.0,
+    "inclination_deg": 97.6,
+    "max_off_nadir_deg": 55.0,
+    "min_elevation_deg": 10.0,
+    "station_min_elevation_deg": 5.0,
+    "time_step_s": 10,
+    "settle_s": 10.0,
+    "slew_rate_deg_s": 2.0,
+    "duty_budget_s": 300,
+    "memory_budget_s": 600
+   },
+   "time_limit_s": 60.0,
+   "stats": {
+    "satellites": 8,
+    "targets": 250,
+    "targets_with_opportunity": 250,
+    "horizon_h": 12.0,
+    "opportunities": 1373,
+    "conflict_pairs": 16335,
+    "pairs_both_orders": 5497,
+    "pairs_mutually_exclusive": 3087,
+    "budget_constraints": 83,
+    "total_weight": 655,
+    "reachable_weight": 655,
+    "instance_build_s": 3.5959949999814853
+   },
+   "results": [
+    {
+     "method": "greedy",
+     "objective": 518,
+     "bound": null,
+     "time_s": 0.1091018000151962,
+     "status": "heuristic",
+     "n_tasks": 152
+    },
+    {
+     "method": "cpsat+hint",
+     "objective": 557,
+     "bound": 575.0,
+     "time_s": 61.169444900006056,
+     "status": "FEASIBLE",
+     "build_s": 0.9064448999706656,
+     "trace": [
+      [
+       2.5400641000000004,
+       450.0
+      ],
+      [
+       2.5934523,
+       518.0
+      ],
+      [
+       3.0058646,
+       520.0
+      ],
+      [
+       6.651728500000001,
+       528.0
+      ],
+      [
+       7.395271800000001,
+       530.0
+      ],
+      [
+       8.992514400000001,
+       531.0
+      ],
+      [
+       9.796282600000001,
+       532.0
+      ],
+      [
+       20.053874500000003,
+       533.0
+      ],
+      [
+       20.217386700000002,
+       535.0
+      ],
+      [
+       20.7973912,
+       536.0
+      ],
+      [
+       20.9786526,
+       539.0
+      ],
+      [
+       22.0841184,
+       540.0
+      ],
+      [
+       25.516184600000003,
+       541.0
+      ],
+      [
+       25.912321000000002,
+       542.0
+      ],
+      [
+       27.094473500000003,
+       543.0
+      ],
+      [
+       27.2249157,
+       544.0
+      ],
+      [
+       27.820072300000003,
+       545.0
+      ],
+      [
+       29.176527800000002,
+       546.0
+      ],
+      [
+       32.4343942,
+       547.0
+      ],
+      [
+       35.9827813,
+       549.0
+      ],
+      [
+       36.8014202,
+       550.0
+      ],
+      [
+       37.932741400000005,
+       551.0
+      ],
+      [
+       38.0337243,
+       552.0
+      ],
+      [
+       43.4607133,
+       553.0
+      ],
+      [
+       44.490295700000004,
+       554.0
+      ],
+      [
+       45.537512400000004,
+       555.0
+      ],
+      [
+       50.3948319,
+       556.0
+      ],
+      [
+       57.045344500000006,
+       557.0
+      ]
+     ],
+     "n_tasks": 168
+    },
+    {
+     "method": "milp-highs",
+     "objective": 541,
+     "bound": 576.0,
+     "time_s": 60.255200700019486,
+     "status": "TIME_LIMIT",
+     "build_s": 0.11140729999169707,
+     "n_tasks": 156
+    },
+    {
+     "method": "rolling-cpsat-60min",
+     "objective": 540,
+     "bound": null,
+     "time_s": 2.911407500039786,
+     "status": "heuristic",
+     "n_tasks": 165
+    }
+   ]
+  },
+  {
+   "size": "medium",
+   "seed": 1,
+   "config": {
+    "n_sats": 8,
+    "n_targets": 250,
+    "horizon_h": 12.0,
+    "seed": 1,
+    "altitude_km": 550.0,
+    "inclination_deg": 97.6,
+    "max_off_nadir_deg": 55.0,
+    "min_elevation_deg": 10.0,
+    "station_min_elevation_deg": 5.0,
+    "time_step_s": 10,
+    "settle_s": 10.0,
+    "slew_rate_deg_s": 2.0,
+    "duty_budget_s": 300,
+    "memory_budget_s": 600
+   },
+   "time_limit_s": 60.0,
+   "stats": {
+    "satellites": 8,
+    "targets": 250,
+    "targets_with_opportunity": 250,
+    "horizon_h": 12.0,
+    "opportunities": 1333,
+    "conflict_pairs": 15606,
+    "pairs_both_orders": 4947,
+    "pairs_mutually_exclusive": 2496,
+    "budget_constraints": 84,
+    "total_weight": 680,
+    "reachable_weight": 680,
+    "instance_build_s": 3.4569665000308305
+   },
+   "results": [
+    {
+     "method": "greedy",
+     "objective": 560,
+     "bound": null,
+     "time_s": 0.12896380003076047,
+     "status": "heuristic",
+     "n_tasks": 158
+    },
+    {
+     "method": "cpsat+hint",
+     "objective": 590,
+     "bound": 604.0,
+     "time_s": 60.99028130003717,
+     "status": "FEASIBLE",
+     "build_s": 0.789123099995777,
+     "trace": [
+      [
+       2.6025835,
+       486.0
+      ],
+      [
+       2.6569957,
+       560.0
+      ],
+      [
+       3.0157725,
+       561.0
+      ],
+      [
+       6.585486400000001,
+       570.0
+      ],
+      [
+       7.030056,
+       571.0
+      ],
+      [
+       8.081801200000001,
+       573.0
+      ],
+      [
+       12.1521556,
+       574.0
+      ],
+      [
+       12.5920646,
+       576.0
+      ],
+      [
+       18.0671186,
+       577.0
+      ],
+      [
+       29.521725000000004,
+       578.0
+      ],
+      [
+       30.620697500000002,
+       580.0
+      ],
+      [
+       34.8843813,
+       582.0
+      ],
+      [
+       35.257477,
+       583.0
+      ],
+      [
+       37.919596500000004,
+       585.0
+      ],
+      [
+       40.5229301,
+       586.0
+      ],
+      [
+       41.381516100000006,
+       588.0
+      ],
+      [
+       46.484903200000005,
+       589.0
+      ],
+      [
+       55.600121300000005,
+       590.0
+      ]
+     ],
+     "n_tasks": 174
+    },
+    {
+     "method": "milp-highs",
+     "objective": 580,
+     "bound": 604.999999999998,
+     "time_s": 60.10754960007034,
+     "status": "TIME_LIMIT",
+     "build_s": 0.046361900051124394,
+     "n_tasks": 165
+    },
+    {
+     "method": "rolling-cpsat-60min",
+     "objective": 570,
+     "bound": null,
+     "time_s": 1.4270910000195727,
+     "status": "heuristic",
+     "n_tasks": 167
+    }
+   ]
+  },
+  {
+   "size": "medium",
+   "seed": 2,
+   "config": {
+    "n_sats": 8,
+    "n_targets": 250,
+    "horizon_h": 12.0,
+    "seed": 2,
+    "altitude_km": 550.0,
+    "inclination_deg": 97.6,
+    "max_off_nadir_deg": 55.0,
+    "min_elevation_deg": 10.0,
+    "station_min_elevation_deg": 5.0,
+    "time_step_s": 10,
+    "settle_s": 10.0,
+    "slew_rate_deg_s": 2.0,
+    "duty_budget_s": 300,
+    "memory_budget_s": 600
+   },
+   "time_limit_s": 60.0,
+   "stats": {
+    "satellites": 8,
+    "targets": 250,
+    "targets_with_opportunity": 250,
+    "horizon_h": 12.0,
+    "opportunities": 1319,
+    "conflict_pairs": 14625,
+    "pairs_both_orders": 6481,
+    "pairs_mutually_exclusive": 1814,
+    "budget_constraints": 88,
+    "total_weight": 629,
+    "reachable_weight": 629,
+    "instance_build_s": 1.1012198000680655
+   },
+   "results": [
+    {
+     "method": "greedy",
+     "objective": 506,
+     "bound": null,
+     "time_s": 0.04090949997771531,
+     "status": "heuristic",
+     "n_tasks": 159
+    },
+    {
+     "method": "cpsat+hint",
+     "objective": 534,
+     "bound": 551.0,
+     "time_s": 60.30193479999434,
+     "status": "FEASIBLE",
+     "build_s": 0.18351819994859397,
+     "trace": [
+      [
+       0.5414815000000001,
+       398.0
+      ],
+      [
+       0.5774611000000001,
+       506.0
+      ],
+      [
+       2.3275744,
+       507.0
+      ],
+      [
+       4.131645300000001,
+       514.0
+      ],
+      [
+       4.3210882,
+       515.0
+      ],
+      [
+       5.0739261,
+       516.0
+      ],
+      [
+       5.2992799,
+       517.0
+      ],
+      [
+       5.9439929000000005,
+       518.0
+      ],
+      [
+       6.2510566,
+       519.0
+      ],
+      [
+       7.555388000000001,
+       520.0
+      ],
+      [
+       8.3711188,
+       521.0
+      ],
+      [
+       16.1517096,
+       524.0
+      ],
+      [
+       23.101383000000002,
+       525.0
+      ],
+      [
+       24.8427465,
+       526.0
+      ],
+      [
+       25.206779100000002,
+       527.0
+      ],
+      [
+       25.7844564,
+       529.0
+      ],
+      [
+       27.9707413,
+       531.0
+      ],
+      [
+       29.776187900000004,
+       532.0
+      ],
+      [
+       30.3318277,
+       533.0
+      ],
+      [
+       35.8994532,
+       534.0
+      ]
+     ],
+     "n_tasks": 176
+    },
+    {
+     "method": "milp-highs",
+     "objective": 505,
+     "bound": 553.9999999997165,
+     "time_s": 60.14304270001594,
+     "status": "TIME_LIMIT",
+     "build_s": 0.05689799995161593,
+     "n_tasks": 161
+    },
+    {
+     "method": "rolling-cpsat-60min",
+     "objective": 522,
+     "bound": null,
+     "time_s": 3.601892700069584,
+     "status": "heuristic",
+     "n_tasks": 169
+    }
+   ]
+  },
+  {
+   "size": "large",
+   "seed": 0,
+   "config": {
+    "n_sats": 12,
+    "n_targets": 600,
+    "horizon_h": 12.0,
+    "seed": 0,
+    "altitude_km": 550.0,
+    "inclination_deg": 97.6,
+    "max_off_nadir_deg": 55.0,
+    "min_elevation_deg": 10.0,
+    "station_min_elevation_deg": 5.0,
+    "time_step_s": 10,
+    "settle_s": 10.0,
+    "slew_rate_deg_s": 2.0,
+    "duty_budget_s": 300,
+    "memory_budget_s": 600
+   },
+   "time_limit_s": 120.0,
+   "stats": {
+    "satellites": 12,
+    "targets": 600,
+    "targets_with_opportunity": 600,
+    "horizon_h": 12.0,
+    "opportunities": 4826,
+    "conflict_pairs": 145039,
+    "pairs_both_orders": 59661,
+    "pairs_mutually_exclusive": 15217,
+    "budget_constraints": 144,
+    "total_weight": 1477,
+    "reachable_weight": 1477,
+    "instance_build_s": 5.5537775999400765
+   },
+   "results": [
+    {
+     "method": "greedy",
+     "objective": 1060,
+     "bound": null,
+     "time_s": 0.139640900073573,
+     "status": "heuristic",
+     "n_tasks": 293
+    },
+    {
+     "method": "cpsat+hint",
+     "objective": 1072,
+     "bound": 1138.0,
+     "time_s": 121.98300630005542,
+     "status": "FEASIBLE",
+     "build_s": 1.482341599999927,
+     "trace": [
+      [
+       5.6655264,
+       809.0
+      ],
+      [
+       6.355033700000001,
+       1060.0
+      ],
+      [
+       23.8754104,
+       1062.0
+      ],
+      [
+       31.225197100000003,
+       1063.0
+      ],
+      [
+       35.806252400000005,
+       1066.0
+      ],
+      [
+       41.683978700000004,
+       1068.0
+      ],
+      [
+       43.1099248,
+       1069.0
+      ],
+      [
+       52.7835357,
+       1070.0
+      ],
+      [
+       59.9567192,
+       1071.0
+      ],
+      [
+       64.3785486,
+       1072.0
+      ]
+     ],
+     "n_tasks": 304
+    },
+    {
+     "method": "milp-highs",
+     "objective": 145,
+     "bound": 1147.0,
+     "time_s": 120.82328139990568,
+     "status": "TIME_LIMIT",
+     "build_s": 0.4755501999752596,
+     "n_tasks": 49
+    },
+    {
+     "method": "rolling-cpsat-60min",
+     "objective": 1088,
+     "bound": null,
+     "time_s": 76.55097360000946,
+     "status": "heuristic",
+     "n_tasks": 318
+    }
+   ]
+  },
+  {
+   "size": "large",
+   "seed": 1,
+   "config": {
+    "n_sats": 12,
+    "n_targets": 600,
+    "horizon_h": 12.0,
+    "seed": 1,
+    "altitude_km": 550.0,
+    "inclination_deg": 97.6,
+    "max_off_nadir_deg": 55.0,
+    "min_elevation_deg": 10.0,
+    "station_min_elevation_deg": 5.0,
+    "time_step_s": 10,
+    "settle_s": 10.0,
+    "slew_rate_deg_s": 2.0,
+    "duty_budget_s": 300,
+    "memory_budget_s": 600
+   },
+   "time_limit_s": 120.0,
+   "stats": {
+    "satellites": 12,
+    "targets": 600,
+    "targets_with_opportunity": 600,
+    "horizon_h": 12.0,
+    "opportunities": 4893,
+    "conflict_pairs": 137137,
+    "pairs_both_orders": 55750,
+    "pairs_mutually_exclusive": 18619,
+    "budget_constraints": 137,
+    "total_weight": 1486,
+    "reachable_weight": 1486,
+    "instance_build_s": 5.496464000083506
+   },
+   "results": [
+    {
+     "method": "greedy",
+     "objective": 1047,
+     "bound": null,
+     "time_s": 0.1706401000265032,
+     "status": "heuristic",
+     "n_tasks": 298
+    },
+    {
+     "method": "cpsat+hint",
+     "objective": 1066,
+     "bound": 1126.0,
+     "time_s": 122.32534960005432,
+     "status": "FEASIBLE",
+     "build_s": 1.7123105000937358,
+     "trace": [
+      [
+       5.8323169,
+       833.0
+      ],
+      [
+       6.500111100000001,
+       1047.0
+      ],
+      [
+       22.1742059,
+       1060.0
+      ],
+      [
+       45.670118200000005,
+       1062.0
+      ],
+      [
+       61.4934504,
+       1063.0
+      ],
+      [
+       91.73467670000001,
+       1064.0
+      ],
+      [
+       96.29274960000001,
+       1065.0
+      ],
+      [
+       104.6368267,
+       1066.0
+      ]
+     ],
+     "n_tasks": 308
+    },
+    {
+     "method": "milp-highs",
+     "objective": 894,
+     "bound": 1126.0,
+     "time_s": 120.81212230003439,
+     "status": "TIME_LIMIT",
+     "build_s": 0.44254419999197125,
+     "n_tasks": 257
+    },
+    {
+     "method": "rolling-cpsat-60min",
+     "objective": 1079,
+     "bound": null,
+     "time_s": 56.95493179990444,
+     "status": "heuristic",
+     "n_tasks": 315
+    }
+   ]
+  }
+ ],
+ "memory_sweep": [
+  {
+   "memory_budget_s": 200,
+   "greedy": 459,
+   "cpsat": 489,
+   "cpsat_bound": 489.0,
+   "status": "OPTIMAL"
+  },
+  {
+   "memory_budget_s": 300,
+   "greedy": 510,
+   "cpsat": 542,
+   "cpsat_bound": 566.0,
+   "status": "FEASIBLE"
+  },
+  {
+   "memory_budget_s": 450,
+   "greedy": 516,
+   "cpsat": 553,
+   "cpsat_bound": 575.0,
+   "status": "FEASIBLE"
+  },
+  {
+   "memory_budget_s": 600,
+   "greedy": 518,
+   "cpsat": 549,
+   "cpsat_bound": 575.0,
+   "status": "FEASIBLE"
+  },
+  {
+   "memory_budget_s": 900,
+   "greedy": 518,
+   "cpsat": 554,
+   "cpsat_bound": 575.0,
+   "status": "FEASIBLE"
+  },
+  {
+   "memory_budget_s": 100000,
+   "greedy": 518,
+   "cpsat": 554,
+   "cpsat_bound": 575.0,
+   "status": "FEASIBLE"
+  }
+ ]
+}

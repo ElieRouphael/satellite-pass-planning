@@ -1,0 +1,10 @@
+[project]
+name = "satplan"
+version = "0.1.0"
+description = "Satellite pass planning demo: CP-SAT, MILP (HiGHS) and greedy on a synthetic RF-listening constellation"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+addopts = "-q"

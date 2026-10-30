@@ -1,0 +1,48 @@
+[small seed 0] 168 opportunities, 876 pairs
+   greedy      heuristic  value 193  bound None  0.0s
+   cpsat+hint  OPTIMAL    value 219  bound 219.0  0.7s
+   milp-highs  OPTIMAL    value 219  bound 219.0  8.8s
+   rolling-cpsat-60min heuristic  value 218  bound None  0.3s
+[small seed 1] 170 opportunities, 953 pairs
+   greedy      heuristic  value 161  bound None  0.0s
+   cpsat+hint  OPTIMAL    value 179  bound 179.0  1.8s
+   milp-highs  OPTIMAL    value 179  bound 179.00000000000253  17.3s
+   rolling-cpsat-60min heuristic  value 178  bound None  0.1s
+[small seed 2] 171 opportunities, 1015 pairs
+   greedy      heuristic  value 175  bound None  0.0s
+   cpsat+hint  OPTIMAL    value 198  bound 198.0  0.6s
+   milp-highs  OPTIMAL    value 198  bound 198.0000000000001  9.7s
+   rolling-cpsat-60min heuristic  value 194  bound None  0.2s
+[medium seed 0] 1373 opportunities, 16335 pairs
+   greedy      heuristic  value 518  bound None  0.1s
+   cpsat+hint  FEASIBLE   value 557  bound 575.0  61.2s
+   milp-highs  TIME_LIMIT value 541  bound 576.0  60.3s
+   rolling-cpsat-60min heuristic  value 540  bound None  2.9s
+[medium seed 1] 1333 opportunities, 15606 pairs
+   greedy      heuristic  value 560  bound None  0.1s
+   cpsat+hint  FEASIBLE   value 590  bound 604.0  61.0s
+   milp-highs  TIME_LIMIT value 580  bound 604.999999999998  60.1s
+   rolling-cpsat-60min heuristic  value 570  bound None  1.4s
+[medium seed 2] 1319 opportunities, 14625 pairs
+   cpsat+hint  FEASIBLE   value 534  bound 551.0  60.3s
+   milp-highs  TIME_LIMIT value 505  bound 553.9999999997165  60.1s
+   rolling-cpsat-60min heuristic  value 522  bound None  3.6s
+[large seed 0] 4826 opportunities, 145039 pairs
+   greedy      heuristic  value 1060  bound None  0.1s
+   cpsat+hint  FEASIBLE   value 1072  bound 1138.0  122.0s
+   milp-highs  TIME_LIMIT value 145  bound 1147.0  120.8s
+   rolling-cpsat-60min heuristic  value 1088  bound None  76.6s
+[large seed 1] 4893 opportunities, 137137 pairs
+   greedy      heuristic  value 1047  bound None  0.2s
+   cpsat+hint  FEASIBLE   value 1066  bound 1126.0  122.3s
+   milp-highs  TIME_LIMIT value 894  bound 1126.0  120.8s
+   rolling-cpsat-60min heuristic  value 1079  bound None  57.0s
+[memory sweep]
+   memory 200s: greedy 459  cpsat 489 (bound 489.0)
+   memory 300s: greedy 510  cpsat 542 (bound 566.0)
+   memory 450s: greedy 516  cpsat 553 (bound 575.0)
+   memory 600s: greedy 518  cpsat 549 (bound 575.0)
+   memory 900s: greedy 518  cpsat 554 (bound 575.0)
+   memory 100000s: greedy 518  cpsat 554 (bound 575.0)
+done
+SolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
