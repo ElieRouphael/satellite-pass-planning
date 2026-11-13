@@ -144,3 +144,26 @@ def test_rolling_horizon_is_feasible_and_beats_greedy():
     r = solve_rolling(inst, block_s=1800, time_limit_s=12, workers=4)
     assert check_plan(inst, r["plan"]) == []
     assert r["objective"] >= solve_greedy(inst)["objective"]
+
+
+# ---------------------------------------------------------------- MILP warm start and threads
+def test_greedy_warm_start_satisfies_every_milp_row(small):
+    from satplan.milp import build_milp, hint_vector
+
+    g = solve_greedy(small)
+    c, cons, bounds, _ = build_milp(small)
+    v = hint_vector(small, g["plan"])
+    r = cons.A @ v
+    assert np.all(r >= cons.lb - 1e-6) and np.all(r <= cons.ub + 1e-6)
+    assert np.all(v >= bounds.lb - 1e-6) and np.all(v <= bounds.ub + 1e-6)
+    assert -c @ v == pytest.approx(g["objective"])
+
+
+def test_milp_threads_and_warm_start_reach_the_same_optimum():
+    inst, _ = build_instance(ScenarioConfig(n_sats=4, n_targets=120, horizon_h=6, seed=0))
+    g = solve_greedy(inst)
+    cold = solve_milp(inst, 60, threads=1)
+    warm = solve_milp(inst, 60, threads=4, hint=g["plan"])
+    assert cold["status"] == warm["status"] == "OPTIMAL"
+    assert cold["objective"] == warm["objective"] >= g["objective"]
+    assert check_plan(inst, warm["plan"]) == []

@@ -83,7 +83,7 @@ def solve_cpsat(inst: PlanningInstance, time_limit_s: float = 30.0, workers: int
     if status in (cp_model.OPTIMAL, cp_model.FEASIBLE):
         plan = {o.idx: float(solver.value(s[o.idx])) for o in inst.opportunities if solver.boolean_value(x[o.idx])}
     return {
-        "method": "cpsat" + ("+hint" if hint is not None else ""),
+        "method": f"cpsat-{workers}t" + ("+hint" if hint is not None else ""),
         "plan": plan,
         "objective": int(round(solver.objective_value)) if plan else None,
         "bound": float(solver.best_objective_bound),

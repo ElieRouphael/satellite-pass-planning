@@ -1,5 +1,6 @@
-# Tested with Python 3.13, ortools 9.15, numpy 2.5, scipy 1.18, matplotlib 3.11, pytest 9.
+# Tested with Python 3.13, ortools 9.15, highspy 1.16, numpy 2.5, scipy 1.18, matplotlib 3.11, pytest 9.
 ortools>=9.10
+highspy>=1.7
 numpy>=1.26
 scipy>=1.11
 matplotlib>=3.8
